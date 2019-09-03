@@ -1,2 +1,2 @@
 # byfreaksweb
-Repositorio para la página web de ByFreaks
+Feature de maqueta en Bootstrap
