@@ -1,2 +1,2 @@
 # byfreaksweb
-Repositorio para la página web de ByFreaks
+Repositorio para maquetado en CSS Grid Layout
