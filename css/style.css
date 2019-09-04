@@ -1,0 +1,93 @@
+/*
+Paleta de colores
+
+Verde Agua #00968B
+Gris Claro #BABABA
+Gris Medio #686868
+Gris Dark  #4D4D4D
+Negro      #272727
+
+*/
+
+/*Fuentes*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+/*Bloque antes del menú*/
+
+.blockTop{
+    background-color: #00968B;
+    font-family: 'Raleway';
+}
+
+.logo{
+    height: 250px;
+    width: auto;
+}
+
+.sticky-top {
+    z-index: 900;
+}
+
+.selectLanguages{
+    background-color: #686868;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-family: 'Raleway';
+}
+
+.selectLanguages:hover{
+    background-color: white;
+    color: #686868;
+}
+
+
+
+/*Menú top*/
+
+.menuTop{
+    background-color: #272727;
+    font-family: 'Ubuntu';
+}
+
+.optionActive{
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
+
+.optionNotActive{
+    color: #686868;
+    font-size: 1.2em;
+}
+
+.subscribe{
+    background-color: red;
+    color: white;
+}
+
+/*Responsive
+
+    1) Revisar reordenado en cuadricula, bootstrap
+
+
+*/
+
+@media (max-width: 575.98px) { }
+
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+@media (min-width: 1200px) { }
