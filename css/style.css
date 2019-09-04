@@ -37,19 +37,40 @@ Negro      #272727
     z-index: 900;
 }
 
-.selectLanguages{
+.selectLanguages,.iconLanguages{
     background-color: #686868;
     color: white;
-    padding: 10px;
     border: none;
     font-family: 'Raleway';
 }
 
-.selectLanguages:hover{
-    background-color: white;
-    color: #686868;
+.iconLanguages{
+    border-bottom-left-radius: 0;
 }
 
+.iconLanguages:focus{
+    outline: none;
+}
+
+.selectLanguagesHover,.selectLanguages{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-control.selectLanguagesHover,.iconLanguagesHover{
+    background-color: white;
+    color: #686868;
+    border: white;
+}
+
+.form-control.selectLanguagesHover:focus,.form-control.selectLanguages:focus{
+    box-shadow: none;
+    border: white;
+}
+
+.languagesCol{
+    padding: 0px;
+} 
 
 
 /*Menú top*/
@@ -74,6 +95,104 @@ Negro      #272727
     background-color: red;
     color: white;
 }
+
+/*Dark/Light mode*/
+
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+  
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: #686868;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+} 
+  
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+  
+input:checked + .slider {
+    background-color: #00968B;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+label{
+    margin-bottom: 0;
+}
+
+p.textSwitchMode{
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.colMode{
+    padding-right: 0;
+}
+
+.colTextMode{
+    padding-left: 0;
+}
+  
 
 /*Responsive
 
