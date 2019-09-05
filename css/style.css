@@ -201,6 +201,13 @@ p.textSwitchMode{
     margin-bottom: 0;
 }
 
+/*Game Brand New*/
+
+.newGameBlock{
+    height: auto;
+    background-color: white;
+}
+
 /*Footer block*/
 
 .footerBlock{
