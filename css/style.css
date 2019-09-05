@@ -83,7 +83,7 @@ Negro      #272727
 .optionActive{
     font-weight: bold;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .optionNotActive{
@@ -95,6 +95,22 @@ Negro      #272727
     background-color: red;
     color: white;
 }
+
+.optionNotActive:hover,.optionActive:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.hvr-underline-from-center:before {
+    background: #00968B;
+    height: 1.5px;
+}
+
+.btnSubscribe{
+    border-radius: 0;
+}
+
+
 
 /*Dark/Light mode*/
 
@@ -128,7 +144,7 @@ body {
     display: inline-block;
     height: 34px;
     position: relative;
-    width: 60px;
+    width: 90px;
 }
   
 .theme-switch input {
@@ -162,7 +178,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(51px);
 }
 
 .slider.round {
@@ -185,14 +201,48 @@ p.textSwitchMode{
     margin-bottom: 0;
 }
 
-.colMode{
-    padding-right: 0;
+/*Footer block*/
+
+.footerBlock{
+    height: auto;
+    background-color: #272727;
 }
 
-.colTextMode{
-    padding-left: 0;
+.socialIcons{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
-  
+
+.ig:hover{
+    color: #E1306C;
+}
+
+.dc:hover{
+    color: #7289da ;
+}
+
+.tt:hover{
+    color: #1DA1F2;
+}
+
+.gh:hover{
+    color: #6e5494;
+}
+
+.rowIcons{
+    margin-top: 20px;
+}
+
+.rowCpr{
+    margin-top: 20px;
+}
+
+.cpr{
+    color: white;
+}
 
 /*Responsive
 
