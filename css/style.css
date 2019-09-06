@@ -118,7 +118,7 @@ Negro      #272727
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
-    --bg-color: #fff;
+    --bg-color: #000;
     --heading-color: #292922;
 }
 
@@ -205,7 +205,53 @@ p.textSwitchMode{
 
 .newGameBlock{
     height: auto;
-    background-color: white;
+    /*background-image: url(../images/test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;*/
+    background-color:#000; 
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textGameNew{
+    color:black;
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.colNG{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+}
+
+.hrCustom{
+    background-color: black;
+}
+
+.gifgame{
+    padding: 5px;
+}
+
+.rowBuy{
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    align-content: center;
+}
+
+p.buyZone{
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 /*Footer block*/
