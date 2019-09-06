@@ -10,6 +10,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    background-color: rgb(125, 125, 125);
 }
 
 ul {
@@ -168,44 +169,16 @@ figure {
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 2fr;
-    grid-template-rows: 100px 50px; 
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 80px 20px; 
     align-items: center;
     justify-items: center;
     background-color: #BABABA;
-    height: 150px;
-    }
-    .options a {
-        color: #272727;
-    }
-    .options a:hover {
-        color: #00968b;
-    }
-    .options {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 2;
-        justify-self: left;
-        padding: 10px;
-    }
-
-    footer .language {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 2;
-        align-self: center;
-        justify-self: start;
-    }
-    footer .language-selector {
-        color: #272727;
-        padding: 10px 50px 10px 20px;
-        margin: 0;
-    }
-    footer .language-selector option {
-        background-color: #272727;
-        color: white;
+    height: 120px;
     }
 
     .social {
-        grid-column: 3 / span 1;
+        grid-column: 2 / span 1;
         grid-row: 1 / span 1;
         display: block;
         color: #4d4d4d;
@@ -220,7 +193,7 @@ figure {
     }
 
     .copyright {
-        grid-column: 3 / span 1;
+        grid-column: 2 / span 1;
         grid-row: 2 / span 1;
     }
     .copyright p {
@@ -228,45 +201,103 @@ figure {
         color: #686868;
     }
 
-    .contact {
-        color: #272727;
-        grid-column: 4 / span 1;
-        grid-row: 1 / span 1;
-        padding-top: 20px;
+    footer .language {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
+        align-self: center;
+        justify-self: center;
     }
-    .input-container {
-        display: flex;
+    footer .language-selector {
+        color: #272727;
+        padding: 10px 50px 10px 20px;
+        margin: 0;
+    }
+    footer .language-selector option {
+        background-color: #272727;
+        color: white;
+}
+
+.highlight {
+        height: 350px;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template: 20px 300px 20px / 30px 1fr 3fr 30px;
+    }
+
+    .highlight-gif-wrapper {
+        width: inherit;
+        height: inherit;
+        grid-column: 1 / span 4;
+    }
+    .highlight-gif {
+        object-fit: fill;
+        height: inherit;
+        object-fit: cover;
+        overflow: hidden;
         width: 100%;
     }
-    .input-container i {
-        padding: 10px 10px;
-        background-color: #00968b;
+
+    .highlight-cover-wrapper {
+        overflow: hidden;
+        object-fit: cover;
+        border: 3px solid black;
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .highlight-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .highlight-content {
         color: white;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        background-color: rgba(0, 0, 0, .89);
+        padding: 20px;
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+        display: grid;
+        grid-template: 40px 150px 70px / 2fr 1fr;
     }
-    .form-email input {
-        border: 1px solid gray;
-        padding: 10px 20px 10px 10px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+    .highlight-title {
+        color: #1eafa6;
+        font-size: 30px;
+        margin-top: 0;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        margin: 0;
     }
-    .form-email button {
-        display: block;
-        background: #00968b;
+    .highlight-description {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+        margin: 5px;
+        border-right: 1px solid white;
+        padding-right: 20px;
+    }
+    .highlight-details {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        padding-left: 20px;
+        margin: 0;
+    }
+    .highlight-details p {
+        margin: 10px 0;
+    }
+    .highlight-rating strong {
+        vertical-align: top;
+    }
+    .highlight-button {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        margin: 15px;
+        background-color: #00968b;
+        border: none;
+        border-radius: 5px;
         color: white;
         font-weight: bold;
-        width: 100px;
-        margin: 10px auto 0;
-        padding: 5px 0;
-        border-radius: 5px;
-        cursor: pointer;
     }
-    .form-email button:hover{
-        background-color: #08857c;
+    .highlight-button:hover {
+        background-color: #1eafa6;
     }
-    .form-email h3 {
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-        margin-top: 30px
-}
