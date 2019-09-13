@@ -147,7 +147,7 @@ body {
     display: inline-block;
     height: 34px;
     position: relative;
-    width: 90px;
+    width: 60px;
 }
   
 .theme-switch input {
@@ -181,7 +181,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(51px);
+    transform: translateX(26px);
 }
 
 .slider.round {
