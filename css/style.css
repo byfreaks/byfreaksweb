@@ -24,7 +24,10 @@ Negro      #272727
 /*Bloque antes del menú*/
 
 .blockTop{
-    background-color: #00968B;
+    background-image: url('../images/test.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Raleway';
 }
 
@@ -252,6 +255,48 @@ p.buyZone{
     font-size: 1.2em;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+/*Subscribe banner*/
+
+.bannerSubs{
+    height: auto;
+    margin-top: 10px;
+    background-color: #00968B;
+}
+
+.subscribeText{
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 5em;
+}
+
+/*Normal games*/
+
+.rowGames{
+    background-color: white;
+    height: 60px;
+    font-family: 'Ubuntu';
+}
+
+.gamesCarousel{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.textGames{
+    font-family: 'Raleway';
+    color: white;
+}
+
+.rowText{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.crInd{
+    bottom: -70px;
 }
 
 /*Footer block*/
